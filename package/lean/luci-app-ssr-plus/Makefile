@@ -2,7 +2,11 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-app-ssr-plus
 PKG_VERSION:=175
+<<<<<<< HEAD
 PKG_RELEASE:=5
+=======
+PKG_RELEASE:=3
+>>>>>>> parent of ac00994abf... Merge branch 'master' of https://github.com/coolsnowwolf/lede into dev-lean-lede
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
