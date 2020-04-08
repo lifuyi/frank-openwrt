@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 local shadowsocksr = "shadowsocksr"
 local uci = luci.model.uci.cursor()
 local server_table = {}
@@ -16,6 +17,8 @@ for key,_ in pairs(server_table) do
 end 
 
 table.sort(key_table)
+=======
+>>>>>>> parent of 0382a499c2... luci-app-ssr-plus:Adjust custom item display (#3879)
 
 m = Map("shadowsocksr")
 -- [[ global ]]--
@@ -45,6 +48,16 @@ o.datatype = "uinteger"
 o:depends("enable_switch", "1")
 o.default = 3
 
+<<<<<<< HEAD
+=======
+o = s:option(Flag, "chnroute", translate("Enable Custom Chnroute"))
+o.rmempty = false
+
+o = s:option(Value, "chnroute_url", translate("Chnroute Update url"))
+o.default = "https://ispip.clang.cn/all_cn.txt"
+o:depends("chnroute", "1")
+
+>>>>>>> parent of 0382a499c2... luci-app-ssr-plus:Adjust custom item display (#3879)
 o = s:option(Flag, "adblock", translate("Enable adblock"))
 o.rmempty = false
 
@@ -54,6 +67,7 @@ o.default = "https://gitee.com/privacy-protection-tools/anti-ad/raw/master/anti-
 o:depends("adblock", "1")
 o.description = translate("Support AdGuardHome and DNSMASQ format list")
 
+<<<<<<< HEAD
 o = s:option(Value, "gfwlist_url", translate("gfwlist Update url"))
 o:value("https://cdn.jsdelivr.net/gh/Loukky/gfwlist-by-loukky/gfwlist.txt", translate("Loukky/gfwlist-by-loukky"))
 o:value("https://cdn.jsdelivr.net/gh/gfwlist/gfwlist/gfwlist.txt", translate("gfwlist/gfwlist"))
@@ -62,11 +76,16 @@ o.default = "https://cdn.jsdelivr.net/gh/gfwlist/gfwlist/gfwlist.txt"
 o = s:option(Value, "chnroute_url", translate("Chnroute Update url"))
 o:value("https://ispip.clang.cn/all_cn.txt", translate("Clang.CN"))
 o.default = "https://ispip.clang.cn/all_cn.txt"
+=======
+o = s:option(Flag, "netflix", translate("Enable Custom Netflix IP Url"))
+o.rmempty = false
+>>>>>>> parent of 0382a499c2... luci-app-ssr-plus:Adjust custom item display (#3879)
 
 o = s:option(Value, "nfip_url", translate("nfip_url"))
 o:value("https://raw.githubusercontent.com/QiuSimons/Netflix_IP/master/NF_only.txt", translate("Netflix IP Only"))
 o:value("https://raw.githubusercontent.com/QiuSimons/Netflix_IP/master/getflix.txt", translate("Netflix and AWS"))
 o.default = "https://raw.githubusercontent.com/QiuSimons/Netflix_IP/master/NF_only.txt"
+o:depends("netflix", "1")
 o.description = translate("Customize Netflix IP Url")
 
 -- [[ SOCKS5 Proxy ]]--

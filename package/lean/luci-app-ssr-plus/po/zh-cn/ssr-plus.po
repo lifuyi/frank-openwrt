@@ -337,6 +337,9 @@ msgstr "GFWList更新URL"
 msgid "Chnroute Update url"
 msgstr "国内IP段更新URL"
 
+msgid "Enable Custom Netflix IP Url"
+msgstr "启用自定义Netflix IP更新URL"
+
 msgid "nfip_url"
 msgstr "Netflix IP段更新URL"
 
@@ -346,6 +349,21 @@ msgstr "自定义Netflix IP更新URL（默认项目地址：https://github.com/Q
 msgid "Enable Process Deamon"
 msgstr "启用进程自动守护"
 
+<<<<<<< HEAD
+=======
+msgid "Advertising Data"
+msgstr "【广告屏蔽】数据库"
+
+msgid "Chnroute Setting"
+msgstr "国内IP段数据库更新设置"
+
+msgid "Enable custom chnroute"
+msgstr "启用自定义更新地址"
+
+msgid "Update url"
+msgstr "更新链接"
+
+>>>>>>> parent of 0382a499c2... luci-app-ssr-plus:Adjust custom item display (#3879)
 msgid "DNS Server IP and Port"
 msgstr "DNS服务器地址和端口"
 

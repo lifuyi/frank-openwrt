@@ -11,7 +11,13 @@ config global
 	option switch_timeout '5'
 	option switch_time '667'
 	option switch_try_count '3'
+<<<<<<< HEAD
 	option gfwlist_url 'https://raw.githubusercontent.com/Loukky/gfwlist-by-loukky/master/gfwlist.txt'
+=======
+	option adblock '0'
+	option adblock_url 'https://gitee.com/privacy-protection-tools/anti-ad/raw/master/anti-ad-for-dnsmasq.conf'
+	option chnroute '1'
+>>>>>>> parent of 0382a499c2... luci-app-ssr-plus:Adjust custom item display (#3879)
 	option chnroute_url 'https://ispip.clang.cn/all_cn.txt'
 	option nfip_url 'https://raw.githubusercontent.com/QiuSimons/Netflix_IP/master/NF_only.txt'
 	option adblock_url 'https://gitee.com/privacy-protection-tools/anti-ad/raw/master/anti-ad-for-dnsmasq.conf'
